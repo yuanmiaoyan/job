@@ -919,3 +919,6 @@ html,body,.swiper-container,.swiper-slide{
         opacity: 1;
     }
 }
+.swiper-slide img{
+    width: 100%;
+}
