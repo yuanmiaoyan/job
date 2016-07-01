@@ -295,7 +295,7 @@ html,
 .main-bg i{
     width: 0.35rem;
     height: 0.32rem;
-    background: url("../img/secondscreen-icons.png") no-repeat center top;
+    background: url("../img/name-icon.png") no-repeat center top;
     display: inline-block;
     background-size: cover;
     margin-right: .2rem;
@@ -305,20 +305,20 @@ html,
     margin: .2rem 0;
 }
 .main-bg .school i{
-    background-position: -0 -37px;
+    background-image: url(../img/school-icon.png);
 }
 .main-bg .tel i{
-    background-position: -0 -20px;
+    background-image: url(../img/tel-icon.png);
 }
 .main-bg .degree i{
-    background-position: -0 -55px;
+    background-image: url(../img/degree.png);
 }
 .main-bg .email i{
-    background-position: -0 -76px;
+    background-image: url(../img/email-icon.png);
 }
 .main-bg .location i{
-    height: 0.42rem;
-    background-position: -0 -94px;
+    height: 0.45rem;
+    background-image: url(../img/location-icon.png);
 }
 #page2 .light{
     -webkit-animation: bigger 1.5s infinite both;
@@ -359,6 +359,17 @@ html,
 
 
 @keyframes bigger {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes bigger {
     0%{
         transform: scale(1);
     }
