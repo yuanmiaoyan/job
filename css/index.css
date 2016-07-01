@@ -293,7 +293,7 @@ html,
 }
 /*.main-bg */
 .main-bg i{
-    width: 0.35rem;
+    width: 0.39rem;
     height: 0.32rem;
     background: url("../img/name-icon.png") no-repeat center top;
     display: inline-block;
@@ -317,7 +317,8 @@ html,
     background-image: url(../img/email-icon.png);
 }
 .main-bg .location i{
-    height: 0.45rem;
+    height: 0.46rem;
+    width: .35rem;
     background-image: url(../img/location-icon.png);
 }
 #page2 .light{
