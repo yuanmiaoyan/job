@@ -12,6 +12,7 @@ new Swiper(".swiper-container", {
 function changeEnd(swiper) {
     var n = swiper.activeIndex,
         slideAry = swiper.slides;//->获取当前所有的活动块(获取的结果是一个数组)
+    var timer=null;
     [].forEach.call(slideAry, function (slide,index) {
         if (n == index) {
             if (n == 7) {
@@ -20,7 +21,12 @@ function changeEnd(swiper) {
                 slide.id = "page6"
             } else {
                 slide.id = "page" + n;
-                //if(slide.id=='page5'){print()};
+                count=0;
+                clearInterval(this.timer);
+                document.getElementById("content").innerHTML="";
+                if(slide.id=='page5'){
+                     this.timer=setInterval(oneByOne,100)
+                }
             }
             return;
         }
@@ -50,21 +56,20 @@ function changeEnd(swiper) {
 
     });
 }
-
-/*function print(){
+//function print(){
         var paper = "1.热爱编程，有良好的编程习惯，有强烈的学习欲望。\n2.对待工作认真负责，善于沟通、协调，有较强的集体荣誉感与团队精神。\n3.逻辑思维能力强，做事有条理性,有较强的分析问题和解决问题的能力。\n4.有问题不逃避，愿意虚心向他人学习，从学习中锻炼了持之以恒的精神。\n5.自己可以不是最聪明的，但要当最努力的。";
         var count = 1;
         function oneByOne() {
             var screen = paper.substr(0, count);
             document.getElementById("content").innerText  = screen;
-            console.log(document.getElementById("content").innerText)
+            //console.log(document.getElementById("content").innerText)
             count++;
             if (count > paper.length)
                 return;
-            setTimeout(oneByOne, 100);
+            //timer=setTimeout(oneByOne, 100);
         }
-        oneByOne()
-}*/
+        //oneByOne()
+//}
 
 var music = document.getElementById("music"),
     audioMusic = document.getElementById("audioMusic");
