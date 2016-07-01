@@ -247,10 +247,14 @@ html,
     width: .24rem;
     margin-left: -.12rem;
 }
+.tip1{
+    bottom: 0.5rem;
+    opacity: .5;
+}
 .tip img{
     width: 100%;
 }
-#page1 .tip{
+#page1 .tip,#page2 .tip{
     -webkit-animation: fadeOutUp 1.5s infinite both;
     animation: fadeOutUp 1.5s infinite both;
 }
@@ -270,6 +274,7 @@ html,
     position: absolute;
     top: 2.3rem;
     left: 2.8rem;
+    opacity: 0;
 }
 .main-bg{
     width: 5.71rem;
@@ -280,10 +285,157 @@ html,
     top:3.1rem;
     background: url("../img/secondscreen-bg.png") no-repeat center;
     background-size: cover;
+    color: #fff;
+    font-size: .3rem;
+    padding: .3rem .2rem .2rem .5rem;
+    box-sizing: border-box;
+    opacity: 0;
 }
 /*.main-bg */
+.main-bg i{
+    width: 0.35rem;
+    height: 0.32rem;
+    background: url("../img/secondscreen-icons.png") no-repeat center top;
+    display: inline-block;
+    background-size: cover;
+    margin-right: .2rem;
+    vertical-align: middle;
+}
+.main-bg div{
+    margin: .2rem 0;
+}
+.main-bg .school i{
+    background-position: -0 -37px;
+}
+.main-bg .tel i{
+    background-position: -0 -20px;
+}
+.main-bg .degree i{
+    background-position: -0 -55px;
+}
+.main-bg .email i{
+    background-position: -0 -76px;
+}
+.main-bg .location i{
+    height: 0.42rem;
+    background-position: -0 -94px;
+}
+#page2 .light{
+    -webkit-animation: bigger 1.5s infinite both;
+    animation: bigger 1.5s infinite both;
+}
+#page2 .main-bg{
+    -webkit-animation: bounceInUp 1.5s both;
+    animation: bounceInUp 1.5s both;
+}
+#page2 .about-me{
+    -webkit-animation: bounceInRight 1.5s both;
+    animation: bounceInRight 1.5s both;
+}
+#page2 .main-bg i{
+    -webkit-animation: bounceInLeft 1.5s both;
+    animation: bounceInLeft 1.5s both;
+}
+#page2 .main-bg .tel i{
+    -wenkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+#page2 .main-bg .school i{
+    -wenkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+#page2 .main-bg .degree i{
+    -wenkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+#page2 .main-bg .email i{
+    -wenkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+#page2 .main-bg .location i{
+    -wenkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
 
 
+@keyframes bigger {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
 
 @keyframes clipMe {
     0%, 100% {
