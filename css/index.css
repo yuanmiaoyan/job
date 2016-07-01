@@ -255,8 +255,33 @@ html,
     animation: fadeOutUp 1.5s infinite both;
 }
 
-
-
+/*page2*/
+.second-screen img{
+    width: 100%;
+}
+.second-screen .light{
+    position: absolute;
+    top:2rem;
+    left: 2rem;
+    width: .71rem;
+}
+.second-screen .about-me{
+    width: 3.28rem;
+    position: absolute;
+    top: 2.3rem;
+    left: 2.8rem;
+}
+.main-bg{
+    width: 5.71rem;
+    height: 5.62rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.75rem;
+    top:3.1rem;
+    background: url("../img/secondscreen-bg.png") no-repeat center;
+    background-size: cover;
+}
+/*.main-bg */
 
 
 
@@ -500,4 +525,58 @@ html,
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }
+}
+
+.six-screen>div:nth-of-type(1){
+    position: absolute;
+    top: 3rem;
+    left:50%;
+    width:3.5rem;
+    height:3.88rem;
+    margin-left: -1.75rem;
+    background: url("../img/2.gif") no-repeat center center;
+    background-size: cover;
+}
+.six-screen>div p:nth-of-type(1){
+    font-size:0.7rem;
+    text-align: center;
+    margin-top: 1.1rem;
+    color:white;
+}
+
+.six-screen>p:nth-of-type(1){
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    margin-left: -3.25rem;
+    width:6.5rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color:white;
+}
+.six-screen>p:nth-of-type(2){
+    position: absolute;
+    top: 9rem;
+    width:4.5rem;
+    left: 50%;
+    margin-left: -2.25rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color:white;
+}
+.six-screen>p:nth-of-type(3){
+    position: absolute;
+    top:10rem;
+    width:4.5rem;
+    left: 50%;
+    margin-left:-2.25rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color:white;
+}
+.six-screen>img:nth-of-type(1){
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    text-align: center;
 }
